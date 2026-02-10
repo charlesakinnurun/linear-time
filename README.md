@@ -144,5 +144,4 @@ REAL-WORLD EXAMPLES OF O(n):
 ---
 ## 🧠 Why Linear Time Matters
 
-Linear time complexity is efficient and often **the best possible time** in cases where you *must* look at every element in a dataset (e.g., searching or scanning all values). Since the running time grows proportionally with input size, algorithms with O(n) complexity remain manageable for larger inputs. :contentReference[oaicite:3]{index=3}
-
+Linear time complexity is efficient and often **the best possible time** in cases where you *must* look at every element in a dataset (e.g., searching or scanning all values). Since the running time grows proportionally with input size, algorithms with O(n) complexity remain manageable for larger inputs.
