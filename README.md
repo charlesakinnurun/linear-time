@@ -1,4 +1,4 @@
-# Linear-Time
+<!-- # Linear-Time
 
 **Explanation of Linear Time Complexity (O(n))**
 
@@ -145,3 +145,147 @@ REAL-WORLD EXAMPLES OF O(n):
 ## 🧠 Why Linear Time Matters
 
 Linear time complexity is efficient and often **the best possible time** in cases where you *must* look at every element in a dataset (e.g., searching or scanning all values). Since the running time grows proportionally with input size, algorithms with O(n) complexity remain manageable for larger inputs.
+
+
+-->
+
+
+
+
+
+
+
+
+<!-- # 📘 Linear Time – README -->
+
+<h1 align="center">Linear Time</h1>
+
+## Overview
+
+**Linear Time** refers to an algorithm whose running time grows proportionally with the size of the input.
+
+If the input doubles, the time taken also roughly doubles.
+
+In algorithm analysis, this is written as:
+
+```
+O(n)
+```
+
+Linear time is common and efficient for many real-world problems.
+
+<a href="/src/main.py">Check out for source code</a>
+
+---
+
+## ⚙️ What Linear Time Means
+
+An algorithm runs in linear time when it must process **each element of the input at least once**.
+
+For example:
+
+* Scanning a list to find a value
+* Counting elements in an array
+* Printing all items in a collection
+
+If there are **n items**, the algorithm performs about **n steps**.
+
+---
+
+## 🧠 Python Examples
+
+### Example 1 — Finding the Maximum Value
+
+```python
+def find_max(arr):
+    max_val = arr[0]
+
+    for num in arr:
+        if num > max_val:
+            max_val = num
+
+    return max_val
+```
+
+The loop checks every element once → **O(n)** time.
+
+---
+
+### Example 2 — Counting Even Numbers
+
+```python
+def count_even(numbers):
+    count = 0
+
+    for n in numbers:
+        if n % 2 == 0:
+            count += 1
+
+    return count
+```
+
+Each element is inspected once, so runtime grows linearly.
+
+---
+
+### Example 3 — Searching for a Target Value
+
+```python
+def linear_search(arr, target):
+    for value in arr:
+        if value == target:
+            return True
+    return False
+```
+
+Worst case: the algorithm checks all elements → **O(n)**.
+
+---
+
+## ⏱️ Time Complexity Comparison
+
+| Complexity | Meaning           |
+| ---------- | ----------------- |
+| O(1)       | Constant time     |
+| O(log n)   | Logarithmic time  |
+| **O(n)**   | Linear time       |
+| O(n log n) | Linearithmic time |
+| O(n²)      | Quadratic time    |
+
+Linear time scales well for most applications and is often unavoidable when every element must be examined.
+
+---
+
+## 👍 Advantages
+
+* Efficient for moderate and large datasets
+* Easy to implement and understand
+* Predictable performance
+* Works well when full data traversal is required
+
+## 👎 Disadvantages
+
+* Slower than constant or logarithmic time
+* May become expensive for extremely large datasets
+* Not ideal for repeated searches on static data (use indexing or hashing instead)
+
+---
+
+## 📌 When Linear Time Occurs
+
+Linear time operations appear when:
+
+* Iterating through arrays or lists
+* Reading files line by line
+* Summing values in a dataset
+* Performing linear search
+* Filtering elements based on conditions
+
+These operations are fundamental in programming and data processing.
+
+---
+
+## 🏁 Summary
+
+Linear time complexity **O(n)** means runtime increases directly with input size.
+It represents efficient performance for tasks that must inspect each element and forms the foundation of many algorithms.
